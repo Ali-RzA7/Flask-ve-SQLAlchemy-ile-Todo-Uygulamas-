@@ -2,6 +2,8 @@
 
 Bu proje, Flask web çatısı ve SQLAlchemy ORM (Object-Relational Mapping) kütüphanesi kullanılarak geliştirilen bir Todo Uygulaması'nı içermektedir. Kullanıcılar, uygulamaya kaydolarak hesaplarını oluşturabilir ve giriş yaptıktan sonra kişisel görev listelerini oluşturabilirler.
 
+[Link'e](apps.pythonanywhere.com) tıklayarak siteye girebilirsiniz.
+
 ## Özellikler
 
 - Kullanıcı Kaydı: Kullanıcılar, ad, kullanıcı adı ve şifre bilgileriyle kayıt olabilirler.
