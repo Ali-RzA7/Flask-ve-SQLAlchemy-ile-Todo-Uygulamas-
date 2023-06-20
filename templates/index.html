@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<div style="padding-top: 50px;">
+    <div class="container" style="text-align: center;">
+        <h1>Todo Uygulaması</h1>
+        {% if session["logged_in"] %}
+            <h3>Todo oluşturmak veya görüntülemek için tıkla</h3>
+        {% else %}
+            <h3>Todo oluşturmak veya görüntülemek için lütfen giriş yapınız.</h3>
+        {% endif %}
+    </div>
+    <div class="container" style=" text-align: center; margin-top: 100px;">
+
+        {% if session["logged_in"] %}
+        <a href="todo" class="link-primary"  style="text-decoration: none;"> Todolar </a>
+        {% else %}
+        <a href="/login" class="link-primary" style="text-decoration: none;"> Giriş Yap </a><br><br>
+        <a href="/kayıt" class="link-secondary" style="text-decoration: none;"> Kayıt Ol</a>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
